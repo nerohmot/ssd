@@ -8,7 +8,7 @@
 
 The operating system determins the location of:
 
-- `ssd.conf` file ➜ the configuration file, described [here](src/ssd/ssd.conf.md)
+- `ssd.conf` file ➜ the configuration file, described [here](ssd/src/ssd/ssd.conf.md)
   - Windows : TBD
   - Linux : `/etc/ssd.conf`
   - MacOS : `/etc/ssd.conf`
