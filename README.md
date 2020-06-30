@@ -48,5 +48,19 @@ In any case, the `ssd` is started in the following manner:
 conda run -n _ssd_ python ssd
 ```
 
-# Release
+# Releases & Assets
+
+The whole `ssd` project is in principle a 'noarch' (read: pure python) implementation, however different OS-es need different things to deal with the daemon thing. 
+
+Each release of `ssd` will have 8 assets (given the release as 'M.m.p-B') :
+
+- ssd-M.m.p-B-Linux
+- ssd-M.m.p-B-Linux.sha256
+- ssd-M.m.p-B-Win
+- ssd-M.m.p-B-Win.sha256
+- ssd-M.m.p-B-MacOS
+- ssd-M.m.p-B-MacOS.sha256
+- Source code (zip)
+- Source code (tar.gz)
+
 
