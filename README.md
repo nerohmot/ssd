@@ -2,20 +2,29 @@
 
 # Preample
 
-Up to now there is some 'buttox pains' when it comes to:
+Up to now, in spyder, there is some 'buttox pains' when it comes to:
   1. **Detecting what 'machines' are available in your network**, this is prior to 'connecting' to them, and currently not available.
-  2. **Connecting to remote spyder-kernels**, this is available, but it is very manual. (actually almost un-usable).
+  2. **Connecting to remote spyder-kernels**, this is available, but it is very manual. (actually almost un-usable for head-less devices).
   3. **Environment(s)** ... If ther is any, they are not 'controlled' from `Spyder`. (Or better yet : the application you are coding for!)
 
 This initial proposal tries to solve thes issues transparantly both remote **and local!** (see notes at end)
 
 # Description (Proposal)
 
-The `sksd` uses [zeroconf](https://github.com/jstasiak/python-zeroconf) to announce it's presence to the zeroconf network.
+The `ssd` uses [zeroconf](https://github.com/jstasiak/python-zeroconf) to announce it's presence to the zeroconf network.
 
 [Spyder](https://github.com/spyder-ide/spyder) can now easily 'discover' what machines are available (including the local machine)!
 
-`Spyder` then 'contact' the desired `sksd` and ask him to spin up a `spyder-kernel` as a `user` in a specific `conda environment`, and pass the needed 'credentials' back to `spyder` so `spyder` can connect auto-magically connect to the spinned spyder-kernel.
+Spyder can now contact the desired `ssd` and ask to spin up a `cpp` (<ins>**C**</ins>onda <ins>**P**</ins>roxy <ins>**P**</ins>rocess) as `user`.
+`ssd` will report back the connection info to the just spinned up `cpp`. Spyder connects to the `cpp` and can figure out the avialable environments (for `user`), and,
+if so configured administer the conda environment. In the minimal use-case, spyder uses `cpp` to obtain a list of available conda environments.
+
+Having the available conda environments, Spyder can now contact the desired `ssd` and ask him to spin up a `skp` (<ins>**S**</ins>pyder <ins>**K**</ins>ernel <ins>**P**</ins>rocess) as a `user` in a specific `conda environment`.
+`ssd` will report back the connection data (= the infamous .json file) so that `spyder` can connect auto-magically to the freshley spinned spyder-kernel.
+
+For both `cpp` and `skp`, we need to suply `ssd` (actually `ssp`) with a `username` and `password`. It is logical that we don't send the password as clear text,
+we instead use TSL to 
+
 
 ## installation
 https://docs.conda.io/projects/conda/en/latest/user-guide/configuration/admin-multi-user-install.html
