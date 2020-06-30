@@ -4,7 +4,11 @@ This file contains 1 line for each process that `ssd` (or acctually `ssp`) did s
 
 The format is similar to `ssd.pid` with the addition of the process type (`cpp` or `skp`)
 
-<process_type>:<process_id>:<creation_time>
+<process_type>:<process_id>:<process_ctime>
+
+- process_type : string, either "cpp" or "skp"
+- process_id : unsigned integer
+- process_ctime : unsigned integer
 
 eg:
 
