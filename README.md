@@ -9,7 +9,7 @@ Up to now, in spyder, there is some 'buttox pains' when it comes to:
 
 `ssd` solves these issues transparantly both remote **and local** hosts!
 
-# Description (Proposal)
+# Description
 
 The `ssd` uses [zeroconf](https://github.com/jstasiak/python-zeroconf) to announce it's presence to the zeroconf network.
 
