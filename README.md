@@ -11,9 +11,13 @@ Up to now, in spyder, there is some 'buttox pains' when it comes to:
 
 # Description
 
-The `ssd` uses [zeroconf](https://github.com/jstasiak/python-zeroconf) to announce it's presence to the zeroconf network.
+`ssd` holds:
+- Client-side : as a plugin for Spyder (V5 and above)
+- Server-side : daemon/service per OS (Linux, MacOS & Windows)
 
-[Spyder](https://github.com/spyder-ide/spyder) can now easily 'discover' what machines are available (including the local machine)!
+The `ssd` server-side uses [zeroconf](https://github.com/jstasiak/python-zeroconf) to announce it's presence to the zeroconf network.
+
+[Spyder](https://github.com/spyder-ide/spyder) (by means of the client-side plugin) can now easily 'discover' what machines are available (including the local machine)!
 
 When the user identifies the desired target, Spyder contacts the `ssd` (more correctly `ssp`). We need however to suply a `username` and `password`.
 It is clear that we don't send the password as clear text, we instead use TSL (standare Python [ssl](https://docs.python.org/3.8/library/ssl.html) library or [pyopenssl](https://www.pyopenssl.org/en/stable/)) to communicate with an `ssd`. TLS from his side needs 'certificates', so the `ssd installer` will create a [self-signed certificate](https://stackoverflow.com/questions/10175812/how-to-create-a-self-signed-certificate-with-openssl) when installing `ssd`.
