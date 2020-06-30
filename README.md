@@ -52,7 +52,7 @@ conda run -n _ssd_ python ssd
 
 The whole `ssd` project is in principle a 'noarch' (read: pure python) implementation, however different OS-es need different things to deal with the daemon thing. 
 
-Each release of `ssd` will have 8 assets (given the release as 'M.m.p-B') :
+Each release of `ssd` will have 8 assets (given a release as Major.minor.patch-Build = 'M.m.p-B') :
 
 - ssd-M.m.p-B-Linux
 - ssd-M.m.p-B-Linux.sha256
