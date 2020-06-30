@@ -41,7 +41,7 @@ The server side will install `ssd` in his own 'application environment' with the
 [anaconda](https://www.anaconda.com/products/individual), [miniconda](https://docs.conda.io/en/latest/miniconda.html) or [miniforge](https://github.com/conda-forge/miniforge) is thus best installed on systems as ['multi-user'](
 https://docs.conda.io/projects/conda/en/latest/user-guide/configuration/admin-multi-user-install.html).
 
-We give `ssd` it's own 'application environment' so that testing only needs to cover the [requirements](/requirements) set forward by `ssd` itself, and not clutter any other environments.
+We give `ssd` it's own 'application environment' so that testing only needs to cover the [requirements](/requirements) set forward by `ssd` itself. This way `ssd` will also **never** clutter any other environments!
 
 In any case, the `ssd` is started in the following manner:
 
