@@ -25,7 +25,7 @@ Spyder can now ask the connected `ssd` to spin up a `cpp` (<ins>**C**</ins>onda 
 
 Having the available conda environments, Spyder can now ask the connected `ssd` to spin up a `skp` (<ins>**S**</ins>pyder <ins>**K**</ins>ernel <ins>**P**</ins>rocess) as a `user` in a specific `conda environment`. `ssd` will do so and report back the connection data (= the infamous .json file) so that `spyder` can sub-sequently connect auto-magically to the freshley spinned spyder-kernel.
 
-## installation
+# installation
 
 The installer will ask what needs to be installed if one does `$conda install ssd`.
 
@@ -47,3 +47,6 @@ In any case, the `ssd` is started in the following manner:
 ```sh
 conda run -n _ssd_ python ssd
 ```
+
+# Release
+
