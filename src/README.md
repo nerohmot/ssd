@@ -10,3 +10,6 @@ The sources of the project are devided in 5 parts:
 
 The graphical view on the architecture is as follows:
 
+<p align="center">
+  <img src="/documentation/pictures/architecture.png">
+</p>
