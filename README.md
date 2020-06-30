@@ -38,7 +38,7 @@ If one does `sudo conda install -y ssd` (Linux/MacOS only), the installation is 
 The server side will install `ssd` in his own 'application environment' with the name `_ssd_` ofcourse accessable by root/Administrator.
 
 [anaconda](https://www.anaconda.com/products/individual), [miniconda](https://docs.conda.io/en/latest/miniconda.html) or [miniforge](https://github.com/conda-forge/miniforge) is thus best installed on systems as ['multi-user'](
-https://docs.conda.io/projects/conda/en/latest/user-guide/configuration/admin-multi-user-install.html)
+https://docs.conda.io/projects/conda/en/latest/user-guide/configuration/admin-multi-user-install.html).
 
 We give `ssd` it's own 'application environment' so that testing only needs to cover the [requirements](/requirements) set forward by `ssd` itself, and not clutter any other environments.
 
