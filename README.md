@@ -5,7 +5,7 @@
 Up to now, in spyder, there is some 'buttox pains' when it comes to:
   1. **Detecting what 'machines' are available in your network**, this is prior to 'connecting' to them, and currently not available.
   2. **Connecting to remote spyder-kernels**, this is available, but it is very manual. (actually almost un-usable for head-less devices).
-  3. **Environment(s)** ... If ther is any, they are not 'controlled' from `Spyder`. (Or better yet : the application you are coding for!)
+  3. **Environment(s)** ... If ther is any, they are not controllable from `Spyder`. (Or better yet : the application you are coding for!)
 
 `ssd` solves these issues transparantly both remote **and local** hosts!
 
