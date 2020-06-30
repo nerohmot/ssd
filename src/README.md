@@ -2,10 +2,10 @@
 
 The sources of the project are devided in 5 parts:
 
-- [**s**sd](/src/ssd) ➜ Spyder Spinner Daemon (a 'daemon' wrapper around `ssp`)
-- [ssp](/src/ssp) ➜ Spyder Spinner Process
-- [cpp](/src/cpp) ➜ Conda Proxy Process
-- [skp](/src/skp) ➜ Spyder Kernel Process
+- [ssd](/src/ssd) ➜ <ins>**S**</ins>pyder <ins>**S**</ins>pinner <ins>**D**</ins>aemon (a 'daemon' wrapper around `ssp`)
+- [ssp](/src/ssp) ➜ <ins>**S**</ins>pyder <ins>**S**</ins>pinner <ins>**P**</ins>rocess
+- [cpp](/src/cpp) ➜ <ins>**C**</ins>onda <ins>**P**</ins>roxy <ins>**P**</ins>rocess
+- [skp](/src/skp) ➜ <ins>**S**</ins>pyder <ins>**K**</ins>ernel <ins>**P**</ins>rocess
 - [installer](/src/installer) ➜ Per OS installer scripts
 
 The graphical view on the architecture is as follows:
