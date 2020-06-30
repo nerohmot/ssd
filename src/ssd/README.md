@@ -8,6 +8,15 @@
 
 The operating system determins the location of:
 
-- `ssd.conf` file ➜ the configuration file
-- `ssd.pid` file ➜ the pid file for ssd proper
-- `ssd.pids` file ➜ the pid of the sped up processes
+- `ssd.conf` file ➜ the configuration file, described [here]()
+  - Windows : TBD
+  - Linux : `/etc/ssd.conf`
+  - MacOS : `/etc/ssd.conf`
+- `ssd.pid` file ➜ the pid file for ssd proper, described [here]()
+  - Windows :
+  - Linux : `/var/run/ssd.pid`
+  - MacOS :
+- `ssd.pids` file ➜ the pid of the sped up processes, described [here]()
+  - Windows :
+  - Linux : `/var/run/ssd.pids`
+  - MacOS :
