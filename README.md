@@ -27,27 +27,23 @@ Having the available conda environments, Spyder can now ask the connected `ssd` 
 
 ## installation
 
+The installer will ask what needs to be installed if one does `$conda install ssd`.
 
+For the installation of the server side, one needs to supply the root (administrator) password at the command line.
 
+If one does `$conda install -y ssd` it is presumed that both client- and server-side need installation, however as conda is started as non-root/administrator, the installation script thus **will** prompt to supply the root/administrator password even though the '-y' option was provided.
 
-### Server and Client side = normal use-case
+If one does `sudo conda install -y ssd` (Linux/MacOS only), the installation is truely 'silent'.
 
-if one does : `$conda install ssd`
+The server side will install `ssd` in his own 'application environment' with the name `_ssd_`, accessable by root/Administrator.
 
-`$conda install -y ssd`
+`anaconda`, `miniconda` or `conda-forge` is thus best installed on systems as ['multi-user'](
+https://docs.conda.io/projects/conda/en/latest/user-guide/configuration/admin-multi-user-install.html)
 
-### Server Side Only
+We do this, to make `ssd` independent of `base` or other environments. (read: testing only needs to cover the [requirements]() set forward by `ssd` itself)
 
-`#conda install ssd` or `sudo install ssd`
+In any case, the `ssd` is started in the following manner:
 
-
-
-https://docs.conda.io/projects/conda/en/latest/user-guide/configuration/admin-multi-user-install.html
-
-### Client Side Only = plugin to Spyder (V5 onward)
-
-
-
-## Releases
-
-if one does : `$conda install -y ssd`  
+```sh
+conda run -n _ssd_ python ssd
+```
