@@ -33,7 +33,8 @@ For the installation of the server side, one needs to supply the root/Administra
 
 If one does `$conda install -y ssd` it is presumed that both client- and server-side need installation, however as conda is started as non-root/administrator, the installation script thus **will** prompt to supply the root/administrator password even though the '-y' option was provided.
 
-If one does `sudo conda install -y ssd` (Linux/MacOS only), the installation is truely 'silent'.
+If one does `$sudo conda install -y ssd` or `#conda install -y ssd` (Linux/MacOS only), the installation is truely 'silent'. (Note that the <ins>client side</ins> will only be installed
+in those environments that hold `spyder`)
 
 The server side will install `ssd` in his own 'application environment' with the name `_ssd_` ofcourse accessable by root/Administrator.
 
