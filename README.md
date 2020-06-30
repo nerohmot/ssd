@@ -7,7 +7,7 @@ Up to now, in spyder, there is some 'buttox pains' when it comes to:
   2. **Connecting to remote spyder-kernels**, this is available, but it is very manual. (actually almost un-usable for head-less devices).
   3. **Environment(s)** ... If ther is any, they are not 'controlled' from `Spyder`. (Or better yet : the application you are coding for!)
 
-This initial proposal tries to solve thes issues transparantly both remote **and local!** (see notes at end)
+`ssd` solves these issues transparantly both remote **and local** hosts!
 
 # Description (Proposal)
 
