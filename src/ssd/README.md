@@ -12,11 +12,11 @@ The operating system determins the location of:
   - Windows : TBD
   - Linux : `/etc/ssd.conf`
   - MacOS : `/etc/ssd.conf`
-- `ssd.pid` file ➜ the pid file for ssd proper, described [here]()
+- `ssd.pid` file ➜ the pid file for ssd proper, described [here](/src/ssd/ssd_pid.md)
   - Windows :
   - Linux : `/var/run/ssd.pid`
   - MacOS :
-- `ssd.pids` file ➜ the pid of the sped up processes, described [here]()
+- `ssd.pids` file ➜ the pid of the sped up processes, described [here](/src/ssd/ssd_pids.md)
   - Windows :
   - Linux : `/var/run/ssd.pids`
   - MacOS :
