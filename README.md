@@ -29,7 +29,7 @@ Having the available conda environments, Spyder can now ask the connected `ssd` 
 
 The installer will ask what needs to be installed if one does `$conda install ssd`.
 
-For the installation of the server side, one needs to supply the root (administrator) password at the command line.
+For the installation of the server side, one needs to supply the root/Administrator password at the command line.
 
 If one does `$conda install -y ssd` it is presumed that both client- and server-side need installation, however as conda is started as non-root/administrator, the installation script thus **will** prompt to supply the root/administrator password even though the '-y' option was provided.
 
