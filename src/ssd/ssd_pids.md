@@ -1,11 +1,17 @@
 # ssd.pid<ins>s</ins>
 
-This file contains 1 line (all others are disregarded) and the line holds 2 unsigned integers, the first number is the pid of the `ssd` process, the second is the creation time of the `ssd` process. Both integers are delimited by a column (':')
+This file contains 1 line for each process that `ssd` (or acctually `ssp`) did sped up.
+
+The format is similar to `ssd.pid` with the addition of the process type (`cpp` or `skp`)
+
+<process_type>:<pid>:<creation_time>
 
 eg:
 
 ```sh
-12345:1593508442
+skp:23456:1593508442
+skp:25678:1593509021
+cpp:26789:1593509100
 ```
 
 ## Note:
