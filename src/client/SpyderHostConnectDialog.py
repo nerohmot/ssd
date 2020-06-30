@@ -65,7 +65,7 @@ if __name__ == '__main__':
 
     from zeroconf import Zeroconf
     from zeroconf import ServiceBrowser
-    from sksd.client.discover import SpyderListener
+    from client.discover import SpyderListener
 
     zeroconf = Zeroconf()
     spyderListener = SpyderListener()
