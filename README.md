@@ -13,7 +13,7 @@ Up to now, in spyder, there is some 'buttox pains' when it comes to:
 
 `ssd` holds:
 - [Client-side](/src/client/) : as a plugin for Spyder (V5 and above)
-- [Server-side]()/src/server/) : daemon/service per OS (Linux, MacOS & Windows)
+- [Server-side](/src/server/) : daemon/service per OS (Linux, MacOS & Windows)
 
 The `ssd` server-side uses [zeroconf](https://github.com/jstasiak/python-zeroconf) to announce it's presence to the zeroconf network.
 
