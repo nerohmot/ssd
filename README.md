@@ -40,7 +40,7 @@ The server side will install `ssd` in his own 'application environment' with the
 `anaconda`, `miniconda` or `conda-forge` is thus best installed on systems as ['multi-user'](
 https://docs.conda.io/projects/conda/en/latest/user-guide/configuration/admin-multi-user-install.html)
 
-We do this, to make `ssd` independent of `base` or other environments. (read: testing only needs to cover the [requirements]() set forward by `ssd` itself)
+We do this, to make `ssd` independent of `base` or other environments. (read: testing only needs to cover the [requirements](/requirements) set forward by `ssd` itself)
 
 In any case, the `ssd` is started in the following manner:
 
