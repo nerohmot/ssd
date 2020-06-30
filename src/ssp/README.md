@@ -2,7 +2,7 @@
 
 `ssp` is the core of the project. It is responsible for the following tasks:
 
-## Startup
+## @Startup
 Upon startup, the following tasks will be performed:
 
 - reading the `ssd.conf`config file (location is dependent on OS, determined by SSD)
@@ -16,7 +16,7 @@ Upon startup, the following tasks will be performed:
 
 ## 'idle' mode
 
-The `ssd.conf` file holds an entry `max_slots` (= maximum number of processes it will spin up).
+The [ssd.conf](/src/ssd/ssd_conf.md) file holds an entry `max_slots` (= maximum number of processes it will spin up).
 Each time a CPP or SKP is sped up, SSP is keeping track of the pid & c-time in a `slots` dictionary.
 If in the `slots` dictionary a CPP is found, the 'idle' mode will check once every second if the processes still exist.
 If in the `slots` dictionary no CPP is found, the 'idle' mode will check once every 10-30 seconds if the processes still exist.
