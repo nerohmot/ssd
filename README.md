@@ -22,9 +22,11 @@ if so configured administer the conda environment. In the minimal use-case, spyd
 Having the available conda environments, Spyder can now contact the desired `ssd` and ask him to spin up a `skp` (<ins>**S**</ins>pyder <ins>**K**</ins>ernel <ins>**P**</ins>rocess) as a `user` in a specific `conda environment`.
 `ssd` will report back the connection data (= the infamous .json file) so that `spyder` can connect auto-magically to the freshley spinned spyder-kernel.
 
-For both `cpp` and `skp`, we need to suply `ssd` (actually `ssp`) with a `username` and `password`. It is logical that we don't send the password as clear text,
-we instead use TSL to 
+When contacting `ssd` (more correctly `ssp`), we need to suply a `username` and `password`. It is logical that we don't send the password as clear text,
+we instead use TSL (standare Python [ssl](https://docs.python.org/3.8/library/ssl.html) library or [pyopenssl](https://www.pyopenssl.org/en/stable/)) to 
+communicate with an `ssd`. TLS from his side needs 'certificates', so the `ssd installer` will create a [self-signed certificate](https://stackoverflow.com/questions/10175812/how-to-create-a-self-signed-certificate-with-openssl) when installing `ssd`.
 
+If more security is desirable, the IT department needs to replace the self-signed certificates by certificates signed by a certified autority.
 
 ## installation
 https://docs.conda.io/projects/conda/en/latest/user-guide/configuration/admin-multi-user-install.html
