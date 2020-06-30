@@ -35,12 +35,12 @@ If one does `$conda install -y ssd` it is presumed that both client- and server-
 
 If one does `sudo conda install -y ssd` (Linux/MacOS only), the installation is truely 'silent'.
 
-The server side will install `ssd` in his own 'application environment' with the name `_ssd_`, accessable by root/Administrator.
+The server side will install `ssd` in his own 'application environment' with the name `_ssd_` ofcourse accessable by root/Administrator.
 
 `anaconda`, `miniconda` or `conda-forge` is thus best installed on systems as ['multi-user'](
 https://docs.conda.io/projects/conda/en/latest/user-guide/configuration/admin-multi-user-install.html)
 
-We do this, to make `ssd` independent of `base` or other environments. (read: testing only needs to cover the [requirements](/requirements) set forward by `ssd` itself)
+We give `ssd` it's own 'application environment' so that testing only needs to cover the [requirements](/requirements) set forward by `ssd` itself, and not clutter any other environments.
 
 In any case, the `ssd` is started in the following manner:
 
