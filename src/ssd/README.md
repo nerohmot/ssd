@@ -6,3 +6,8 @@
 - Linux
 - MacOS
 
+The operating system determins the location of:
+
+- `ssd.conf` file ➜ the configuration file
+- `ssd.pid` file ➜ the pid file for ssd proper
+- `ssd.pids` file ➜ the pid of the sped up processes
